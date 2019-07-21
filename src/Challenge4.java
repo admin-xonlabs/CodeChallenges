@@ -1,15 +1,28 @@
 
 public class Challenge4 {
 
-	int hourlyPay = 2000;
-	int slab_hike_percentage = 10;
-	int slab1 = 40;
-	int slab2 = 50;
-	int slab3 = 60;
+	static int hourlyPay = 2000;
+	static int slab_hike_percentage = 10;
+	static int slab1 = 40;
+	static int slab2 = 50;
+	static int slab3 = 60;
 
 	public static double calculateSalary(float hoursWorked) {
 		double result = 0;
-
+		double gross_pay=hoursWorked*hourlyPay;
+		if(hoursWorked<slab1)
+		{	double fine=(slab1-hoursWorked)*gross_pay/100;
+			result=gross_pay;}
+		else if(hoursWorked>=slab1 && hoursWorked<slab2)
+		{
+			result=gross_pay*1.1;
+		}
+		else if(hoursWorked>=slab2 && hoursWorked<slab3)
+		{
+			result=gross_pay*1.21;
+		}
+		else
+			result=gross_pay*1.331;
 		/*
 		 * Complete this method to calculate the salary for the week.
 		 * Note: An employee is expected to work for atleast 40 hours per week, failing to do so, a fine will be incurred. 
