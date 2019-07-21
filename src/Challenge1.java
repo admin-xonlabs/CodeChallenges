@@ -4,6 +4,7 @@ public class Challenge1 {
 	public static int compliment (int n)
 	{
 		int result = -1;
+		result = (n==0)?1:0;
 		
 		/*
 		 * Complete this method
@@ -18,6 +19,9 @@ public class Challenge1 {
 	}
 	
 	public static void main(String arg[]) {
+		 int a=0;
+        
+		 System.out.println("a-->"+compliment(a));
 
 	}
 }
