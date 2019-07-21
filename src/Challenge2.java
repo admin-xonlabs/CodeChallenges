@@ -4,7 +4,7 @@ public class Challenge2 {
 	public static double nCr(int n, int r) {
 		double result = 0;
 
-		result= (factorial(n))/factorial(n-r)*factorial(r);
+		result= (factorial(n))/(factorial(n-r)*factorial(r));
 
 
 		return result;
