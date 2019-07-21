@@ -11,20 +11,31 @@ public class Challenge4 {
 		double result = 0;
 		double gross_pay=hoursWorked*hourlyPay;
 		if(hoursWorked<slab1)
-		{	double fine=(slab1-hoursWorked)*gross_pay/100;
-			result=gross_pay-fine;}
+		{
+			double fine=(slab1-hoursWorked)*gross_pay/100;
+			result=gross_pay-fine;
+		}
 		else if(hoursWorked==slab1)
-		    result=gross_pay;
+		{
+			result=gross_pay;
+		}
 		else if(hoursWorked>slab1 && hoursWorked<slab2)
 		{
-			result=gross_pay*1.1;
+			result=gross_pay+((hoursWorked-slab1)*2000*0.1);
 		}
 		else if(hoursWorked>=slab2 && hoursWorked<slab3)
 		{
-			result=gross_pay*1.21;
+			result=gross_pay+(10*2000*0.1);
+			result=result+((hoursWorked-slab2)*2000*0.21);
+		
 		}
 		else
-			result=gross_pay*1.331;
+		{
+			result=gross_pay+(10*2000*0.1);
+			result=result+(10*2000*0.21);
+			result=result+((hoursWorked-slab3)*2000*0.331);
+			
+		}	
 		/*
 		 * Complete this method to calculate the salary for the week.
 		 * Note: An employee is expected to work for atleast 40 hours per week, failing to do so, a fine will be incurred. 
@@ -38,8 +49,8 @@ public class Challenge4 {
 	
 	public static void main (String arg[])
 	{
-		double pay1 = calculateSalary(40);
-		System.out.println("Pay for 40 hours work: "+pay1);
+		double pay1 = calculateSalary(36);
+		System.out.println("Pay for 36 hours work: "+pay1);
 		
 		double pay2 = calculateSalary(45);
 		System.out.println("Pay for 45 hours work: "+pay2);
