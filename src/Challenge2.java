@@ -13,7 +13,7 @@ public class Challenge2 {
 
 	public static double nPr(int n, int r) {
 		double result = 0;
-		result= (factorial(n)/(factorial(n-r));
+		result= (factorial(n)/(factorial(n-r)));
 		/*
 		 * Complete this method to calculate the nPr from input number 'n' and 'r'
 		 */
