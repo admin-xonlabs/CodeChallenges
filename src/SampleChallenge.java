@@ -3,6 +3,9 @@ public class SampleChallenge {
 
 	public static double mPowerN(int m, int n) {
 		double result = 1;
+		for(int i=0;i<n;i++)
+                result=result*m;
+	
 
 		return result;
 	}
