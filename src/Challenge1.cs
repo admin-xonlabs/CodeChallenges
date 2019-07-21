@@ -3,7 +3,7 @@ public class Challenge1 {
 
 	public static int compliment (int n)
 	{
-		int result = -1;
+		// this code only works in c# 
 		bool a =Convert.ToBoolean(n);
             	int b = Convert.ToInt32(!a);
 		return b;
