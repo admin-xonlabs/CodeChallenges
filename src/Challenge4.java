@@ -13,7 +13,7 @@ public class Challenge4 {
 		if(hoursWorked<slab1)
 		{	double fine=(slab1-hoursWorked)*gross_pay/100;
 			result=gross_pay-fine;}
-		if(hoursWorked==slab1)
+		else if(hoursWorked==slab1)
 		    result=gross_pay;
 		else if(hoursWorked>slab1 && hoursWorked<slab2)
 		{
