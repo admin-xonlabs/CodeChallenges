@@ -4,15 +4,16 @@ public class Challenge2 {
 	public static double nCr(int n, int r) {
 		double result = 0;
 
-		/*
-		 * Complete this method to calculate the nCr from input numbers 'n' and 'r'
-		 */
+		result= (factorial(n))/factorial(n-r)*factorial(r);
+
 
 		return result;
 	}
 
 	public static double nPr(int n, int r) {
 		double result = 0;
+
+		result= (factorial(n))/factorial(n-r);
 
 		/*
 		 * Complete this method to calculate the nPr from input number 'n' and 'r'
@@ -23,14 +24,14 @@ public class Challenge2 {
 
 	public static double factorial(int n) {
 		double result = 1;
-
-		/*
-		 * Complete this method to calculate the factorial of an input number 'n'
-		 */
-
-		return result;
+		 
+		if(n==0)
+		    return 1;
+		else
+		    return(n*factorial(n-1));
+	
 	}
-
+	
 	public static void main(String arg[]) {
 
 		double res1 = factorial(2);
