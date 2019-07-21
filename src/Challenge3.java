@@ -2,8 +2,24 @@
 public class Challenge3 {
 
 	public static int findMaxOccurrence(int[] numbers) {
-		int element = -1;
-
+		int element=0,max=0,count=0;
+		for(int i=0;i<numbers.length;i++)
+		{
+			count=0;
+			for(int j=0;j<numbers.length;j++)
+			{
+				if(numbers[i]==numbers[j])
+				{
+					count++;
+				}
+			}
+			if(max<count)
+			{
+				max=count;
+				element=numbers[i];
+			}
+		}
+		
 		/*
 		 * Parse the input array and find out the element with most number of
 		 * occurrence.
