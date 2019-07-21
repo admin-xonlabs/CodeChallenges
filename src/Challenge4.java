@@ -13,7 +13,9 @@ public class Challenge4 {
 		if(hoursWorked<slab1)
 		{	double fine=(slab1-hoursWorked)*gross_pay/100;
 			result=gross_pay-fine;}
-		else if(hoursWorked>=slab1 && hoursWorked<slab2)
+		if(hoursWorked==slab1)
+		    result=gross_pay;
+		else if(hoursWorked>slab1 && hoursWorked<slab2)
 		{
 			result=gross_pay*1.1;
 		}
@@ -36,8 +38,8 @@ public class Challenge4 {
 	
 	public static void main (String arg[])
 	{
-		double pay1 = calculateSalary(36);
-		System.out.println("Pay for 36 hours work: "+pay1);
+		double pay1 = calculateSalary(40);
+		System.out.println("Pay for 40 hours work: "+pay1);
 		
 		double pay2 = calculateSalary(45);
 		System.out.println("Pay for 45 hours work: "+pay2);
