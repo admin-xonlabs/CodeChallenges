@@ -3,7 +3,8 @@ public class Challenge1 {
 
 	public static int compliment (int n)
 	{
-		int result = -1;
+		int result;
+		result= 1-n;
 		
 		/*
 		 * Complete this method
@@ -17,7 +18,9 @@ public class Challenge1 {
 		return result;
 	}
 	
-	public static void main(String arg[]) {
-
+	public static void main(String arg[]) 
+	{
+		int n=compliment(0);
+		System.out.print("the compliment of given number is :" +n);	
 	}
 }
