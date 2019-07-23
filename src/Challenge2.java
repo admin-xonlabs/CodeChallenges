@@ -1,25 +1,14 @@
-/* package codechef; // don't place package name! */
-
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-/* Name of the class has to be "Main" only if the class is public. */
-
 public class Challenge2 {
 
 	public static double nCr(int n, int r) {
 		double result = 0;
-
 		/*
 		 * Complete this method to calculate the nCr from input numbers 'n' and 'r'
 		 */
 		return fact(n) / (fact(r) * fact(n - r)); 
-		
 	}
 
 	public static double nPr(int n, int r) {
-	 
 		/*
 		 * Complete this method to calculate the nPr from input number 'n' and 'r'
 		 */
@@ -59,6 +48,5 @@ public class Challenge2 {
 
 		double res8 = nPr(6, 4);
 		System.out.println("6P4 : " + res8);
-
 	}
 }
