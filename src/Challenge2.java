@@ -29,7 +29,7 @@ public class Challenge2 {
 		System.out.println("Factorial of 2 is : " + res1);
 
 		double res2 = fact(4);
-		System.out.println("Factorial of 140 is : " + res2);
+		System.out.println("Factorial of 4 is : " + res2);
 
 		double res3 = fact(6);
 		System.out.println("Factorial of 6 is : " + res3);
