@@ -1,34 +1,35 @@
 public class Challenge4 {
 
 	static int hourlyPay = 2000;
-	static double slab_hike_percentage = 1.1;
+	static double slab_hike_percentage = 0.1;
 	static int slab1 = 40;
 	static int slab2 = 50;
 	static int slab3 = 60;
 
 	public static double calculateSalary(float hoursWorked) {
-		double result = 0;
 		/*
 		 * Complete this method to calculate the salary for the week.
 		 * Note: An employee is expected to work for atleast 40 hours per week, failing to do so, a fine will be incurred. 
 		 * Below is how the fine is calculated
 		 * Fine = (40 - hours_worked) * gross_pay / 100
 		 */
+		 double result = 0;
+		 double grossPay = hoursWorked * hourlyPay;
 		 if(hoursWorked == slab1){
 			 result = hoursWorked * hourlyPay;
 		 }
 		 else if(hoursWorked > slab1 && hoursWorked <= slab2){
-			result = hoursWorked * (hourlyPay * slab_hike_percentage); 
+			result = grossPay + ((hoursWorked - slab1) * hourlyPay * slab_hike_percentage); 
 		 }
 		 else if(hoursWorked > slab2 && hoursWorked <= slab3){
-			 result = hoursWorked * (hourlyPay * slab_hike_percentage * slab_hike_percentage);
+			 result = grossPay + ((hoursWorked - slab2) * hourlyPay * slab_hike_percentage * slab_hike_percentage);
 		 }
 		 else if(hoursWorked > slab3){
-			 result = hoursWorked * (hourlyPay * slab_hike_percentage * slab_hike_percentage * slab_hike_percentage);
+			 result = grossPay + ((hoursWorked - slab3) * hourlyPay * slab_hike_percentage * slab_hike_percentage * slab_hike_percentage);
 		 }
 		 else{
-			double fine = ((40 - hoursWorked) * 80000)/100;
-			result = 80000 - fine;
+			double fine = ((40 - hoursWorked) * grossPay)/100;
+			result = grossPay - fine;
 		 }
 		return result;
 	}
