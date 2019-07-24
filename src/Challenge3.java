@@ -6,6 +6,7 @@ public class Challenge3 {
 		 * occurrence.
 		 */
 		int element = 0;
+		int maxNo = 0;
 		for(int i=0; i<numbers.length; i++){
 			int count = 0;
 			for(int j=0; j<numbers.length; j++){
@@ -15,9 +16,10 @@ public class Challenge3 {
 			}
 			if(count >= element){
 				element = count;
+				maxNo = numbers[i];
 			}
 		}
-		return element;
+		return maxNo;
 	}
 
 	public static void main(String arg[]) {
