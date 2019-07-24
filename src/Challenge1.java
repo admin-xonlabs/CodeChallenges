@@ -5,7 +5,7 @@ public class Challenge1 {
 		int result = -1;
 		n=0;
 		//taking a as input
-		result=1-a;	
+		result=1-n;	
 
 		/*
 		 * Complete this method
