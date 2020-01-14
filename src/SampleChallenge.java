@@ -2,12 +2,12 @@
 public class SampleChallenge {
 
 	public static double mPowerN(int m, int n) {
-		double result = 1;
+	       double result = 1;
 
-	for(int i=0;i<=n;i++)
+	       for(int i=1;i<=n;i++)
                 {
-                   result*m;
-                  }
+                   result=result*m;
+                }
 		
 		return result;
 	}
