@@ -4,6 +4,11 @@ public class SampleChallenge {
 	public static double mPowerN(int m, int n) {
 		double result = 1;
 
+		for(int i=1;i<=n;i++)
+		{
+			result=result*m;
+		}
+
 		/*
 		Complete this method to return the value of mPowerN. 
 		Note: Do not use Math.pow() method.
