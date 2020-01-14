@@ -8,6 +8,10 @@ public class SampleChallenge {
 		Complete this method to return the value of mPowerN. 
 		Note: Do not use Math.pow() method.
 		*/
+		for(int i=1;i<=n;i++)
+		{
+			result=result*m;
+		}
 		
 		return result;
 	}
