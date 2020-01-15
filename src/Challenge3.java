@@ -1,17 +1,68 @@
 
 public class Challenge3 {
 
-	public static int findMaxOccurrence(int[] numbers) {
+		public static int findMaxOccurrence(int[] numbers) {
 		int element = -1;
-
-		/*
-		 * Parse the input array and find out the element with most number of
-		 * occurrence.
-		 */
+		int unilen;
+		int[] uniq=new int[numbers.length];
+		
+		uniq[0]=numbers[0];
+		unilen=0;
+		for(int i=0;i<numbers.length;i++)
+		{
+			for(int j=0;j<=unilen;j++)
+			{
+				if(numbers[i]==uniq[j])
+				{
+					break;
+				}
+				else
+				{
+				if(j==unilen)
+				{
+					uniq[j+1]=numbers[i];
+					unilen++;
+					
+				}
+				}
+			}
+		}
+		int[] occ=new int[unilen+1];
+		
+		for(int i=0;i<=unilen;i++)
+		{
+			
+			for(int j=0;j<numbers.length;j++)
+			{
+				
+				if(uniq[i]==numbers[j])
+				{
+					occ[i]++;
+					
+					
+				}
+			}
+		
+		}
+int big=occ[0];
+		for(int i=0;i<=unilen;i++)
+		{
+			if(occ[i]>big)
+			{
+				big=occ[i];
+			}
+		}
+		System.out.println("element is");
+		for(int i=0;i<=unilen;i++)
+		{
+			if(occ[i]==big)
+			{
+				System.out.println(uniq[i]+"and repeated for "+big+"times");
+			}
+		}
 
 		return element;
 	}
-
 	public static void main(String arg[]) {
 		int arr1[] = { 10, 20, 20, 40, 40, 40, 12, 25 };
 		int res1 = findMaxOccurrence(arr1);
