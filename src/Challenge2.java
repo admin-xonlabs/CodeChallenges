@@ -1,7 +1,9 @@
 
-public class Challenge2 {
+public class Challenge2 
+{
 
-	public static double nCr(int n, int r) {
+	public static double nCr(int n, int r) 
+	{
 		double result;
 		/*
 		 * Complete this method to calculate the nCr from input numbers 'n' and 'r'
@@ -10,7 +12,8 @@ public class Challenge2 {
 		return result;
 	}
 
-	public static double nPr(int n, int r) {
+	public static double nPr(int n, int r) 
+	{
 		double result;
 		/*
 		 * Complete this method to calculate the nPr from input number 'n' and 'r'
@@ -19,7 +22,8 @@ public class Challenge2 {
 		return result;
 	}
 
-	public static double factorial(int n) {
+	public static double factorial(int n) 
+	{
 		
 		/*
 		 * Complete this method to calculate the factorial of an input number 'n'
@@ -34,7 +38,8 @@ public class Challenge2 {
 		return result;
 	}
 
-	public static void main(String arg[]) {
+	public static void main(String arg[]) 
+	{
 
 		double res1 = factorial(2);
 		System.out.println("Factorial of 2 is : " + res1);

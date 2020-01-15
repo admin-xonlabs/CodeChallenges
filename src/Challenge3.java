@@ -1,4 +1,5 @@
-public class Challenge3 {
+public class Challenge3 
+{
 	public static int findMaxOccurrence(int[] numbers) 
 	{
 		/*

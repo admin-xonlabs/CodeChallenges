@@ -1,6 +1,6 @@
 public class Challenge1 
 {
-	public static int compliment (int n)
+	public static int compliment(int n)
 	{
 		/*
 		 * Complete this method
