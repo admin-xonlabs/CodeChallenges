@@ -3,7 +3,7 @@ public class SampleChallenge {
 
 	public static double mPowerN(int m, int n) {
 		double result = 1;
-
+shivam
 		/*
 		Complete this method to return the value of mPowerN. 
 		Note: Do not use Math.pow() method.
