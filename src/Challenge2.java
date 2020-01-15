@@ -4,7 +4,8 @@ public class Challenge2 {
 	public static double nCr(int n, int r) {
 		double result = 0;
 
-		dhchjxdbn;lvckda<JSZMDbjk/lfxdzlv.kn
+
+		result= (factorial(n))/(factorial(n-r)*factorial(r));
 
 		return result;
 	}
@@ -12,16 +13,17 @@ public class Challenge2 {
 	public static double nPr(int n, int r) {
 		double result = 0;
 
+		result= (factorial(n))/factorial(n-r);
+
 
 		return result;
-	}sdzcm klxjnbkvdco
+	}
 
 	public static double factorial(int n) {
 		double result = 1;
-
-		/*
-		 * Complete this method to calculate the factorial of an input number 'n'
-		 */
+		
+		for (int i = 2; i <= n; i++) 
+        result = result * i; 
 
 		return result;
 	}
