@@ -60,7 +60,7 @@ int big=occ[0];
 				System.out.println(uniq[i]+"and repeated for "+big+"times");
 			}
 		}
-
+element=big;
 		return element;
 	}
 	public static void main(String arg[]) {
