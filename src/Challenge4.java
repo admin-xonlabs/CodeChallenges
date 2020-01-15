@@ -11,16 +11,7 @@ public class Challenge4
 		 * Below is how the fine is calculated
 		 * fine = (40 - hours_worked) * gross_pay / 100
 		 */
-		gross_pay = hoursWorked * hourlyPay;
-		if(hoursWorked >= 40)
-		{
-			result = gross_pay;
-		}
-		else if(hoursWorked < 40)
-		{
-			fine = ((40 - hoursWorked) * gross_pay) / 100;
-			result = gross_pay - fine;
-		}
+		
 		return result;
 	}
 	
