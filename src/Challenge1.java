@@ -1,4 +1,3 @@
-
 public class Challenge1 {
 
 	public static int compliment (int n)
