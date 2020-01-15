@@ -2,31 +2,34 @@
 public class Challenge2 {
 
 	public static double nCr(int n, int r) {
-		double result = 0;
-
+		double result;
 		/*
 		 * Complete this method to calculate the nCr from input numbers 'n' and 'r'
 		 */
-
+		result = (factorial(n)/(factorial(n-r)*factorial(r)));
 		return result;
 	}
 
 	public static double nPr(int n, int r) {
-		double result = 0;
-
+		double result;
 		/*
 		 * Complete this method to calculate the nPr from input number 'n' and 'r'
 		 */
-
+		result = (factorial(n)/(factorial(n-r)));
 		return result;
 	}
 
 	public static double factorial(int n) {
-		double result = 1;
-
+		
 		/*
 		 * Complete this method to calculate the factorial of an input number 'n'
 		 */
+		int i, result = 1;
+
+		for(i=1; i<=n; i++)
+		{
+			result = result * i;
+		}
 
 		return result;
 	}
@@ -37,7 +40,7 @@ public class Challenge2 {
 		System.out.println("Factorial of 2 is : " + res1);
 
 		double res2 = factorial(4);
-		System.out.println("Factorial of 140 is : " + res2);
+		System.out.println("Factorial of 4 is : " + res2);
 
 		double res3 = factorial(6);
 		System.out.println("Factorial of 6 is : " + res3);
