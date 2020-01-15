@@ -3,10 +3,7 @@ public class Challenge3 {
 
 	public static int findMaxOccurrence(int[] arr,int size) {
 
-		/*
-		 * Parse the input array and find out the element with most number of
-		 * occurrence.
-		 */
+		
 		 
 		 int counter = 0;
     int max = 0;
