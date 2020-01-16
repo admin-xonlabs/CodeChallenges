@@ -3,7 +3,6 @@ public class Challenge1 {
 	{
 	System.out.println((1-n));	
 		}
-	
 	public static void main(String arg[]) {
 Scanner s=new Scanner(System.in);
 int n=s.nextInt();
