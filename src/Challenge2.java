@@ -1,34 +1,41 @@
 
 public class Challenge2 {
 
-	public static double nCr(int n, int r) {
+Public static double nCr(int n,int r)
+
+
+{double result = 0;
+
+result=result+factorial(n)/factorial(n-r)*factorial;
+
+return result;
+
+
+}
+public static double nPr(int n, int r) {
 		double result = 0;
 
-		/*
-		 * Complete this method to calculate the nCr from input numbers 'n' and 'r'
-		 */
-
+	result=result+factorial(n)/factorial(n-r);
 		return result;
 	}
 
-	public static double nPr(int n, int r) {
-		double result = 0;
-
-		/*
-		 * Complete this method to calculate the nPr from input number 'n' and 'r'
-		 */
-
-		return result;
-	}
-
-	public static double factorial(int n) {
+public static double factorial(int n) {
 		double result = 1;
 
-		/*
-		 * Complete this method to calculate the factorial of an input number 'n'
-		 */
+		
+if(n<0)
 
-		return result;
+                System.out.println("error");
+
+               Else
+{
+
+                For(int i=1;i<n;i++)
+{
+
+                 result*=i;
+
+		}
 	}
 
 	public static void main(String arg[]) {
