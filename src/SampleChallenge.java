@@ -2,7 +2,7 @@
 public class SampleChallenge {
 
 	public static double mPowerN(int m, int n) {
-	       double result = 1;
+	       double result = 1,p=0;
 
 	       for(int i=1;i<=n;i++)
                 {
