@@ -6,6 +6,7 @@ public class Challenge1 {
 		return 1-n;
 	}
 	
+
 	public static void main(String arg[]) {
 	compliment(n);
 
